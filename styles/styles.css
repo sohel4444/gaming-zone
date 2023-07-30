@@ -27,13 +27,16 @@ display: flex;
     background-color: #fcebe9;
     padding: 50px 40px;
     display: flex;
-    align-items: center;
+   align-items: center;
 }
 .banner-left h1{
       font-size: 16px;
 }
 .banner-left h5{
      font-size: 16px;
+}
+.banner-img{
+    width: 400px;
 }
 .banner-left button{
  font-size: 14px;
@@ -43,6 +46,92 @@ display: flex;
  border: 1px solid #ff4d93;
  border-radius: 5px;
 }
-.banner-img{
-    width: 500px;
+/* banner-section-text */
+.banner-section-text{
+    margin-top: 50px;
+    background-color: #fcebe9;
+    padding: 50px 40px;
+    display: flex;
+   align-items: center;
+}
+.banner-section-text button{
+    font-size: 14px;
+   background-color: red;
+   color: #fff;
+   padding: 4px 5px;
+   border: 1px solid #ff4d93;
+   border-radius: 5px;
+}
+
+.banner-container{
+    margin-top: 50px;
+    background-color: #fcebe9;
+    padding: 50px 40px;
+    display: flex;
+   align-items: center;
+}
+.banner-container img{
+  height: 400px;
+  width: 342px; 
+  flex-shrink: 0;
+  border-radius: 16px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+}
+
+.features{
+    margin-top: 50px;
+    background-color: #fcebe9;
+    padding: 50px 40px;
+    display: flex;
+   align-items: center;
+}
+.features-styles{
+    margin-top: 50px;
+    background-color: #fcebe9;
+    padding: 50px 40px;
+    display: flex;
+   align-items: center;
+}
+.feature-container{
+    margin-top: 50px;
+    background-color: #fcebe9;
+    padding: 50px 40px;
+    display: flex;
+   align-items: center;
+}
+.recact{
+    display: flex;
+    margin-top: 50px;
+    padding: 50px 40px;
+}
+.recact-img{
+    height: 400px;
+  width: 342px;
+}
+
+/* banner-section-text */
+@media screen and (max-width:768x){
+    
+    .panda-body{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .banner-section{
+       flex-direction: column;
+       justify-content: center;
+    }
+    .banner-right{
+    order: 1;
+    }
+
+    .banner-left{
+        order: 2;
+        width: 70%;
+        margin: 0 auto;
+      }
+      .features{
+        flex-direction: column;
+        
+      }
 }
